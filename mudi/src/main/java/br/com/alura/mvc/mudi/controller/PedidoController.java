@@ -2,7 +2,6 @@ package br.com.alura.mvc.mudi.controller;
 
 import javax.validation.Valid;
 
-import org.hibernate.annotations.common.util.StringHelper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
@@ -35,7 +34,7 @@ public class PedidoController {
 		Pedido pedido = novoPedidoRequest.toPedido();
 		pedidoRepository.save(pedido);
 		
-		return "pedido/formulario";  
+		return "redirect:/home";  
 	}
 	
 	
