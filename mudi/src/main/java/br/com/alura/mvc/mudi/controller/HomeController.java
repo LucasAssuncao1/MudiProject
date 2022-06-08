@@ -46,4 +46,8 @@ public class HomeController {
 	public String Error() {
 		return "redirect:/home";
 	}
+	
+	
+//	teste
+	
 }
