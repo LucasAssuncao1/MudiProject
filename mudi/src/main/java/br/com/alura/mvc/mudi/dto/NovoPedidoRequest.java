@@ -47,7 +47,7 @@ public class NovoPedidoRequest {
 	
 	public Pedido toPedido() {
 		Pedido pedido = new Pedido();
-		pedido.setNome(nomeProduto);
+		pedido.setNomeProduto(nomeProduto);
 		pedido.setUrlProduto(urlProduto);
 		pedido.setUrlImagem(urlImagem);
 		pedido.setDescricao(descricao);
